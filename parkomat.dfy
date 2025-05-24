@@ -127,7 +127,7 @@ method Main() {
     
     // Приклад використання методу AcceptCardPayment:
     // Якщо fee = 20, а на карті 5, то оплата не успішна.
-    paymentSuccess, change := parkomat.AcceptCardPayment(2, fee);
+    paymentSuccess, change := parkomat.AcceptCardPayment(5, fee);
     assert !paymentSuccess;
 
     barrierOpened := parkomat.VerifyOpenBarrier(paymentSuccess);
