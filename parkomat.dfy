@@ -113,6 +113,7 @@ method Main() {
     var ticket := parkomat.PressButtonGetTicket(100, "ABC123");
     var barrierOpened: bool;
 
+    // Виїзд пысля 50 хвилин паркування
     var exitTime := 150; // Паркування 50 хвилин: оплата = (50 - 30) * 1 = 20
     var fee := parkomat.FeeFromTicket(ticket, exitTime);
     
